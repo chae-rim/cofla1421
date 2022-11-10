@@ -179,44 +179,48 @@ a {
     box-sizing: border-box;
 }
 
-#skill .list_in {}
+#skill .list_in {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
 
 #skill .list_in li {
     margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #skill .list_in li>div {
-    font-size: 14px;
+    width: 400px;
+    height: 50px;
     font-weight: 300;
     color: #666;
-    padding: 15px 0 0 10px;
-    box-sizing: border-box;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
 }
 
 #skill .list_in .box {
+
+    position: absolute;
+    right: 400px;
     width: 400px;
-    height: 50px;
-    border: 1px solid #000;
-}
-
-#skill .list_in .box:nth-child(1) {
+    height: 60px;
+    padding: 15px 0 0 10px;
+    box-sizing: border-box;
     background-color: aquamarine;
 }
 
-#skill .list_in .box:nth-child(2) {
-    background-color: aquamarine;
-}
-
-#skill .list_in .box:nth-child(3) {
-    background-color: aquamarine;
-}
-
-#skill .list_in .box:nth-child(4) {
-    background-color: aquamarine;
+#skill .list_in .box p {
+    float: right;
 }
 
 #skill .list_in h5 {
-    margin: -30px 0 0 -60px;
+    font-size: 14px;
+    /* margin: -20px 0 0 -60px; */
 }
 
 
@@ -258,31 +262,48 @@ a {
     margin: 60px 0 0 0;
 }
 
-#project li h3 {}
+#project .project_in li img {
+    margin-top: 150px;
+    max-width: 500px;
+}
 
-#project li p {}
+#project .box1 {
+    padding: 20px 0 10px 20px;
+    box-sizing: border-box;
+    line-height: 50px;
+}
 
-#project li a {}
+#project li h3 {
+    font-size: 25px;
+}
+
+#project li p {
+    font-size: 20px;
+}
+
+#project li a {
+    font-size: 20px;
+}
 
 
 
 
 
 
-/* email */
-#email {
+/* contact */
+#contact {
     width: 100%;
     height: 300px;
 }
 
-#email h3 {
+#contact h3 {
     padding: 30px 0 40px 830px;
     font-size: 50px;
     font-weight: 600;
     box-sizing: border-box;
 }
 
-#email p {
+#contact p {
     margin-left: 800px;
     font-size: 25px;
 }
