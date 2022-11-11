@@ -61,3 +61,12 @@ $(function () {
 
 
 // project
+
+// $(function () {
+//     $('.box2 img').mouseenter(function () {
+//         $('.box2 img').css('max-width', '850px')
+//     });
+//     $('.box2 img').mouseleave(function () {
+//         $('.box2 img').css('max-width', '500px')
+//     })
+// })
