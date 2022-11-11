@@ -48,6 +48,7 @@ a {
     height: 100px;
     margin-top: 30px;
     font-size: 40px;
+    font-family: 'Kanit', sans-serif;
 }
 
 #header .nav {
@@ -93,13 +94,17 @@ a {
     margin: 150px 0 0 200px;
 }
 
-#main .home h2 {
+#main .home_in h2 {
+    margin-top: 400px;
     font-size: 80px;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
 }
 
 #main .home p {
     font-size: 16px;
-    color: #666;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
 }
 
 
@@ -122,6 +127,7 @@ a {
     color: rgb(62, 62, 62);
     padding-top: 100px;
     box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
 }
 
 #profile .profile_img {
@@ -187,6 +193,7 @@ a {
     color: rgb(62, 62, 62);
     padding-top: 100px;
     box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
 }
 
 #skill .list {
@@ -261,6 +268,7 @@ a {
     color: rgb(62, 62, 62);
     padding-top: 100px;
     box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
 }
 
 #project .project_in {}
@@ -305,6 +313,7 @@ a {
     font-size: 20px;
     padding: 10px;
     margin-right: 10px;
+    color: rgb(252, 151, 151);
 }
 
 
@@ -324,10 +333,11 @@ a {
     color: rgb(62, 62, 62);
     padding-top: 100px;
     box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
 }
 
 #contact>div>form {
-    margin: 30px 0 0 270px;
+    margin: 30px 0 0 250px;
 }
 
 .field {
@@ -342,7 +352,8 @@ a {
 
 .field input {
     display: block;
-    min-width: 250px;
+    min-width: 300px;
+    min-height: 30px;
     line-height: 1.5;
     font-size: 14px;
 }
@@ -351,7 +362,7 @@ input[type="submit"] {
     display: block;
     padding: 6px 30px;
     font-size: 14px;
-    background-color: #4460AA;
+    background-color: #f54949;
     color: #fff;
     border: none
 }
