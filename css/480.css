@@ -410,4 +410,12 @@ a {
         font-family: 'Arimo', sans-serif;
         color: rgb(24, 24, 24);
     }
+
+    #wrap{
+        display: none;
+    }
+
+    #wrap480{
+        display: block;
+    }
 }

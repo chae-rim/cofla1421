@@ -69,6 +69,7 @@ a {
 #header .nav a {
     font-size: 20px;
     color: #000;
+    transition: all 0.5s;
 }
 
 #main {
@@ -411,3 +412,11 @@ input[type="submit"] {
     font-family: 'Arimo', sans-serif;
     color: rgb(24, 24, 24);
 }
+
+#wrap480{
+    display: none;
+}
+#wrap{
+    display: block;
+}
+
