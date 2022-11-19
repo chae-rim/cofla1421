@@ -18,6 +18,7 @@ a {
 /* 상단 */
 #wrap {
     width: 100%;
+    display: block;
 }
 
 #header {
@@ -39,7 +40,7 @@ a {
 #header .header_in {
     margin: 0 auto;
     width: 1200px;
-
+    height: 90px;
 }
 
 #header .logo {
@@ -133,21 +134,18 @@ a {
 
 #profile .profile_img {
     float: left;
-    margin: 50px 0 0 400px;
+    margin: 50px 0 0 270px;
     width: 400px;
     height: 500px;
+    position: relative;
 }
 
 #profile .profile_img img {
-    margin-left: -130px;
+    position: absolute;
+    top: 0;
+    left: 0;
     max-width: 600px;
     border-radius: 50% 25%;
-}
-
-#profile .profile_img li {}
-
-#profile .profile_img li:last-child {
-    margin-top: 0;
 }
 
 #profile .history {
@@ -156,7 +154,6 @@ a {
     position: absolute;
     top: 1180px;
     left: 950px;
-    /* border: 2px solid #000; */
 }
 
 #profile .history h3 {
@@ -364,6 +361,7 @@ a {
 }
 
 .field {
+    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -413,10 +411,342 @@ input[type="submit"] {
     color: rgb(24, 24, 24);
 }
 
-#wrap480{
+#wrap480 {
     display: none;
 }
-#wrap{
-    display: block;
+
+
+
+@media screen and (max-width:1200px) {
+    #wrap {
+        width: 100%;
+    }
+
+    #header {
+        width: 100%;
+
+    }
+
+    #header .header_in {
+        margin: 0 auto;
+        width: 80%;
+        height: 90px;
+    }
+
+
+
+
+
+
+
+
+    #main .home_in {
+        float: right;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 150px 0 0 10%;
+    }
+
+    #main .home_in h2 {
+        margin-top: 400px;
+        font-size: 6vw;
+        color: #fff;
+        font-family: 'Kanit', sans-serif;
+    }
+
+
+
+
+
+
+
+
+
+    #profile .profile_img {
+        float: left;
+        margin: 80px 0 0 6vw;
+        /* 50 0 0 270 */
+        height: 500px;
+        position: relative;
+    }
+
+    #profile .profile_img img {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        max-width: 400px;
+        /* 600px */
+        border-radius: 50% 25%;
+    }
+
+    #profile .history {
+        width: 50%;
+        /* 600px */
+        height: 600px;
+        position: absolute;
+        top: 1200px;
+        left: 45%;
+    }
+
+    #profile .history h3 {
+        font-size: 1.6vw;
+        text-align: center;
+        margin: 50px 0 20px 0;
+    }
+
+    #profile .history p {
+        margin: 0 auto;
+        width: 500px;
+        font-size: 1.25vw;
+        color: #000;
+        line-height: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+    #skill .list_in {
+        width: 500px;
+        height: 400px;
+        margin: 70px 0 0 120px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #skill .list {
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 800px;
+        height: 500px;
+        border: 5px solid #fff;
+        border-radius: 10px;
+    }
+
+
+
+
+
+
+    #project .project_in .box01 {
+        margin: 130px 80px 0 50px;
+        float: left;
+        width: 500px;
+        height: 450px;
+    }
+
 }
 
+
+
+
+
+@media screen and (max-width:1000px) {
+    #wrap {
+        width: 100%;
+    }
+
+    #header {
+        width: 100%;
+
+    }
+
+    #header .header_in {
+        margin: 0 auto;
+        width: 80%;
+        height: 90px;
+    }
+
+
+
+
+
+
+
+
+    #main .home_in {
+        float: right;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 150px 0 0 10%;
+    }
+
+    #main .home_in h2 {
+        margin-top: 400px;
+        font-size: 6vw;
+        color: #fff;
+        font-family: 'Kanit', sans-serif;
+    }
+
+
+
+
+
+
+
+
+
+    #profile .profile_img {
+        float: left;
+        margin: 80px 0 0 20px;
+        height: 500px;
+        position: relative;
+    }
+
+    #profile .profile_img img {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        max-width: 400px;
+        /* 600px */
+        border-radius: 50% 25%;
+    }
+
+    #profile .history {
+        width: 600px;
+        /* 600px */
+        height: 600px;
+        position: absolute;
+        top: 1200px;
+        left: 400px;
+    }
+
+    #profile .history h3 {
+        font-size: 16px;
+        text-align: center;
+        margin: 50px 0 20px 0;
+    }
+
+    #profile .history p {
+        margin: 0 auto;
+        width: 500px;
+        font-size: 12px;
+        color: #000;
+        line-height: 30px;
+    }
+
+
+
+
+
+
+
+
+
+    #skill {
+        width: 100%;
+        height: 90vh;
+    }
+
+    #skill .list_in {
+        width: 500px;
+        height: 400px;
+        margin: 70px 0 0 120px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #skill .list {
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 800px;
+        height: 500px;
+        border: 5px solid #fff;
+        border-radius: 10px;
+    }
+
+
+
+
+
+
+
+
+    #project {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(255, 255, 200);
+    }
+
+    #project h2 {
+        font-size: 70px;
+        text-align: center;
+        color: rgb(62, 62, 62);
+        padding-top: 100px;
+        box-sizing: border-box;
+        font-family: 'Arimo', sans-serif;
+    }
+
+    #project .project_in {}
+
+    #project .project_in ul {}
+
+    #project .project_in .box01 {
+        margin: 100px 40px 0 60px;
+        float: left;
+        width: 40%;
+        height: 450px;
+    }
+
+    #project .project_in .box01:last-child {
+        margin: 60px 0 0 0;
+        border: 0;
+        background-color: transparent;
+        border-radius: 0;
+    }
+
+    #project .box02 {
+        padding: 60px 0 10px 20px;
+        box-sizing: border-box;
+        line-height: 23px;
+    }
+
+    #project .box02:first-child {
+        padding-top: 20px;
+    }
+
+    #project li h3 {
+        font-size: 2.1vw;
+        margin-top: 10px;
+        font-family: 'Arimo', sans-serif;
+    }
+
+    #project li p {
+        width: 95%;
+        font-size: 1.3vw;
+        margin-bottom: 5px;
+        font-family: 'Arimo', sans-serif;
+    }
+
+    #project li a {
+        border: 1px solid #ccc;
+        font-size: 1.16vw;
+        font-family: 'Arimo', sans-serif;
+        padding: 3px 15px;
+        margin-right: 5px;
+        color: rgb(252, 151, 151);
+    }
+
+    #project .background {
+        position: relative;
+    }
+
+    #project .project_in .monitor {
+        margin-top: 100px;
+        max-width: 400px;
+    }
+
+    #project .project_in .koreanair {
+        position: absolute;
+        top: 120px;
+        left: 15px;
+        max-width: 370px;
+    }
+}
