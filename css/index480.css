@@ -14,18 +14,19 @@ a {
 
 
 
-@media all and (max-width: 480px) {}
-
+/* @media all and (max-width: 480px) {} */
+/* 
 #wrap480 {
     width: 100%;
     display: block;
-}
+} */
 
 #header {
     width: 100%;
-    height: 100px;
+    height: 90px;
     background-color: transparent;
     border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
     position: fixed;
     top: 0;
     left: 0;
@@ -35,32 +36,41 @@ a {
 
 #header.on {
     background-color: rgba(255, 255, 255, 0.838);
+    /* background-color: pink; */
     border-bottom: 1px solid #ccc;
 }
 
 #header .header_in {
-    width: 95%;
+    width: 90%;
+    height: 90px;
 }
 
 #header .logo {
-    margin: 5px 0 0 5px;
-    width: 200px;
-    height: 60px;
-    padding-left: 10px;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    padding: 5px 0 0 10px;
     box-sizing: border-box;
     font-size: 30px;
     font-family: 'Kanit', sans-serif;
 }
 
 #header .nav {
-margin-right: 25px;
+    float: none;
+    width: 100%;
 }
 
-#header .nav ul {}
+#header .nav ul {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: violet; */
+}
 
 #header .nav li {
-    float: left;
-    margin: 0 25px 0 0;
+    float: none;
+    margin: 0;
 }
 
 #header .nav li:last-child {
@@ -71,6 +81,7 @@ margin-right: 25px;
     font-size: 20px;
     color: #000;
     transition: all 0.5s;
+    /* background-color: wheat; */
 }
 
 
@@ -133,44 +144,39 @@ margin-right: 25px;
 /* 프로필 */
 #profile {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: azure;
-    position: relative;
 }
 
 #profile h2 {
     font-size: 30px;
     text-align: center;
     color: rgb(62, 62, 62);
+    margin-bottom: 50px;
     padding-top: 20px;
     box-sizing: border-box;
     font-family: 'Arimo', sans-serif;
 }
 
 #profile .profile_img {
-    float: left;
-    margin: 20px 0 0 60px;
-    width: 200px;
-    height: 300px;
+    float: none;
+    margin: 0;
+    width: 100%;
+    height: auto;
 }
 
 #profile .profile_img img {
-    max-width: 350px;
+    position: unset;
+    display: block;
+    margin: 0 auto;
+    width: 350px;
     border-radius: 50% 25%;
-}
-
-#profile .profile_img li {}
-
-#profile .profile_img li:last-child {
-    margin-top: 0;
 }
 
 #profile .history {
     width: 100%;
     height: auto;
-    position: absolute;
-    top: 450px;
-    left: 0;
+    position: unset;
 }
 
 #profile .history h3 {
@@ -271,7 +277,7 @@ margin-right: 25px;
 /* project */
 #project {
     width: 100%;
-    height:900px;
+    height: 900px;
     background-color: rgb(255, 255, 200);
 }
 
@@ -345,11 +351,18 @@ margin-right: 25px;
     max-width: 440px;
 }
 
-#project .project_in .koreanair {
+#project .project_in .monitor_in {
     position: absolute;
     top: -16px;
     left: 30px;
     max-width: 420px;
+    height: auto;
+    background-color: wheat;
+}
+
+#project .monitor_in img {
+    display: block;
+    width: 420px;
 }
 
 
@@ -374,7 +387,11 @@ margin-right: 25px;
     font-family: 'Arimo', sans-serif;
 }
 
-#contact>div>form {
+#contact>div {
+    width: 100%;
+}
+
+#contact #form {
     margin: 0 auto;
     padding-left: 90px;
     box-sizing: border-box;
@@ -382,7 +399,7 @@ margin-right: 25px;
 }
 
 .field {
-    width: 100%;
+    width: 300px;
     margin-bottom: 10px;
 }
 
@@ -394,7 +411,8 @@ margin-right: 25px;
 
 .field input {
     display: block;
-    min-width: 300px;
+    width: 300px;
+    min-width: unset;
     min-height: 30px;
     line-height: 1.5;
     font-size: 14px;
@@ -433,6 +451,6 @@ input[type="submit"] {
     color: rgb(24, 24, 24);
 }
 
-#wrap {
+/* #wrap {
     display: none;
-}
+} */

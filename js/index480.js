@@ -1,10 +1,10 @@
 //nav
-$(function(){
-    $('.nav li a').mouseenter(function(){
-        $(this).css({color : 'white' })
+$(function () {
+    $('.nav li a').mouseenter(function () {
+        $(this).css({ color: 'white' })
     })
-    $('.nav a').mouseleave(function(){
-        $(this).css({color : 'black'})
+    $('.nav a').mouseleave(function () {
+        $(this).css({ color: 'black' })
     })
 })
 
@@ -29,6 +29,22 @@ $(function () {
 
 
 });
+
+$(document).ready(function () {
+    var status = true
+
+    $(window).scroll(function () {
+        var sct = $(document).scrollTop()
+        if (sct >= 400 && status == true) {
+            status = false;
+            $('#header').addClass('on');
+        } else if (sct < 390 && status == false) {
+            status = true
+            $('#header').removeClass('on');
+        }
+    })
+
+})
 
 
 
