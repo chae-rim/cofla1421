@@ -190,12 +190,77 @@ a {
     font-size: 70px;
     text-align: center;
     color: rgb(62, 62, 62);
-    padding-top: 100px;
+    padding-top: 60px;
     box-sizing: border-box;
     font-family: 'Arimo', sans-serif;
 }
 
-#skill .list {
+#skill .skill_box {
+    margin: 0 auto;
+    width: 1200px;
+    height: 650px;
+    /* background-color: #f54949; */
+}
+
+#skill .skill_box ul {
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: antiquewhite; */
+}
+
+#skill .skill_box li {
+    float: left;
+    width: 500px;
+    height: 300px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 30%;
+    line-height: 25px;
+    background-color: rgb(255, 255, 150);
+}
+
+#skill .skill_box h4 {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#skill .skill_box p {
+    font-size: 16px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+#skill .skill_box .name {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#skill .skill_box .text {
+    margin-top: 25px;
+    font-family: 'Sunflower', sans-serif;
+    font-family: 'Sunflower', sans-serif;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* #skill .list {
     margin: 0 auto;
     margin-top: 50px;
     width: 800px;
@@ -246,7 +311,7 @@ a {
 
 #skill .list_in h5 {
     font-size: 25px;
-}
+} */
 
 
 
@@ -330,31 +395,42 @@ a {
     max-width: 500px;
 }
 
-/* #project .project_in .monitor_in {
+#project .project_in .monitor_in {
     position: absolute;
-    top: 120px;
+    top: 115px;
     left: 15px;
-    max-width: 470px;
-    height: auto;
-} */
+    width: 470px;
+    height: 230px;
+    overflow: hidden;
+}
+
+#project .project_in .monitor_in ul {
+    width: 470px;
+    height: 230px;
+    position: relative;
+}
+
+#project .project_in .monitor_in ul li:nth-child(1) {
+    position: absolute;
+    top: 0px;
+    left: 0%;
+}
+
+#project .project_in .monitor_in ul li:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+}
 
 #project .monitor_in img {
     display: block;
     width: 470px;
 }
 
-#main .monitor_in img:nth-child(1) {
-    left: 0;
-}
-
-#main .monitor_in img:nth-child(2) {
-    left: 100%;
-}
-
 #project .koreanair {
     position: absolute;
     top: 120px;
-    left: 45px;
+    left: 0;
     max-width: 470px;
     height: auto;
 }
@@ -362,8 +438,8 @@ a {
 #project .twosome {
     height: 231px;
     position: absolute;
-    top: 120px;
-    left: 15px;
+    top: 113px;
+    left: 485px;
 }
 
 

@@ -75,7 +75,7 @@ $(document).ready(function () {
                 n = 0;
             }
             move(n);
-        }, 5000)
+        }, 3000)
 
     }
     function move(n) {
