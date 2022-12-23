@@ -330,19 +330,42 @@ a {
     max-width: 500px;
 }
 
-#project .project_in .monitor_in {
+/* #project .project_in .monitor_in {
     position: absolute;
     top: 120px;
     left: 15px;
     max-width: 470px;
     height: auto;
-    background-color: wheat;
-}
+} */
 
 #project .monitor_in img {
     display: block;
     width: 470px;
 }
+
+#main .monitor_in img:nth-child(1) {
+    left: 0;
+}
+
+#main .monitor_in img:nth-child(2) {
+    left: 100%;
+}
+
+#project .koreanair {
+    position: absolute;
+    top: 120px;
+    left: 45px;
+    max-width: 470px;
+    height: auto;
+}
+
+#project .twosome {
+    height: 231px;
+    position: absolute;
+    top: 120px;
+    left: 15px;
+}
+
 
 
 

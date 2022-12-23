@@ -62,11 +62,31 @@ $(function () {
 
 // project
 
-// $(function () {
-//     $('.box2 img').mouseenter(function () {
-//         $('.box2 img').css('max-width', '850px')
-//     });
-//     $('.box2 img').mouseleave(function () {
-//         $('.box2 img').css('max-width', '500px')
-//     })
-// })
+$(document).ready(function () {
+    var current = 0
+    var setIntervalId;
+
+
+    timer();
+    function timer() {
+        setIntervalId = setInterval(function () {
+            var n = current + 1;
+            if (n == 2) {
+                n = 0;
+            }
+            move(n);
+        }, 5000)
+
+    }
+    function move(n) {
+        var currentEl = $('.monitor_in li').eq(current);
+        var nextEl = $('.monitor_in li').eq(n);
+
+
+        currentEl.css({ left: '0%' }).animate({ left: '-100%' });
+        nextEl.css({ left: '100%' }).animate({ left: '0%' });
+
+
+        current = n;
+    }
+});
