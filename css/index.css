@@ -218,10 +218,10 @@ a {
     height: 300px;
     padding: 10px 20px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid yellow;
     border-radius: 30%;
     line-height: 25px;
-    background-color: rgb(255, 255, 150);
+    background-color: rgb(255, 255, 172);
 }
 
 #skill .skill_box h4 {
@@ -229,24 +229,25 @@ a {
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
+    font-family: 'Poor Story', cursive;
 }
 
 #skill .skill_box p {
-    font-size: 16px;
-    padding-top: 20px;
+    font-size: 18px;
+    padding-top: 30px;
     box-sizing: border-box;
+    font-family: 'Poor Story', cursive;
 }
 
 #skill .skill_box .name {
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     margin-top: 50px;
 }
 
 #skill .skill_box .text {
     margin-top: 25px;
-    font-family: 'Sunflower', sans-serif;
-    font-family: 'Sunflower', sans-serif;
+    font-family: 'Poor Story', cursive;
     color: #000;
 }
 
@@ -348,7 +349,11 @@ a {
     height: 450px;
 }
 
-#project .project_in .box01:last-child {
+#project .project_in .box01:nth-child(1) {
+    margin-top: 30px;
+}
+
+#project .project_in .box01:nth-child(2) {
     margin: 60px 0 0 0;
     border: 0;
     background-color: transparent;
@@ -356,13 +361,9 @@ a {
 }
 
 #project .box02 {
-    padding: 60px 15px 10px 20px;
+    padding: 15px 15px 10px 20px;
     box-sizing: border-box;
-    line-height: 28px;
-}
-
-#project .box02:first-child {
-    padding-top: 20px;
+    line-height: 25px;
 }
 
 #project li h3 {
@@ -374,7 +375,7 @@ a {
 #project li p {
     font-size: 16px;
     margin-bottom: 10px;
-    font-family: 'Arimo', sans-serif;
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
 #project li a {

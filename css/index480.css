@@ -12,7 +12,6 @@ a {
     text-decoration: none;
 }
 
-
 #header {
     width: 100%;
     height: 90px;
@@ -181,7 +180,7 @@ a {
     font-size: 2.5vw;
     color: #000;
     line-height: 22px;
-    padding: 10px;
+    padding: 10px 10px 30px 10px;
     box-sizing: border-box;
     text-align: center;
 }
@@ -207,7 +206,76 @@ a {
     font-family: 'Arimo', sans-serif;
 }
 
-#skill .list {
+#skill .skill_box {
+    margin: 0 auto;
+    width: 90%;
+    height: 650px;
+    /* background-color: #f54949; */
+}
+
+#skill .skill_box ul {
+    width: 100%;
+    height: 200px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: antiquewhite; */
+}
+
+#skill .skill_box li {
+    width: 200px;
+    height: 250px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 1px solid yellow;
+    border-radius: 30%;
+    line-height: 25px;
+    background-color: rgb(255, 255, 172);
+}
+
+#skill .skill_box h4 {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Poor Story', cursive;
+}
+
+#skill .skill_box p {
+    font-size: 14px;
+    padding-top: 0;
+    box-sizing: border-box;
+    font-family: 'Poor Story', cursive;
+}
+
+#skill .skill_box .name {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#skill .skill_box .text {
+    margin-top: 0;
+    font-family: 'Poor Story', cursive;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #skill .list {
     margin: 0 auto;
     margin-top: 50px;
     width: 80%;
@@ -258,7 +326,7 @@ a {
 #skill .list_in h5 {
     margin-left: 15px;
     font-size: 15px;
-}
+} */
 
 
 
@@ -287,7 +355,7 @@ a {
 #project .project_in ul {}
 
 #project .project_in .box01 {
-    margin: 40px 0 0 20px;
+    margin: 60px 0 0 20px;
     width: 90%;
     height: 370px;
     border: 3px solid rgb(249, 195, 241);
@@ -302,8 +370,6 @@ a {
 }
 
 #project .box02 {
-    /* padding: 60px 15px 10px 20px;
-    box-sizing: border-box; */
     line-height: 20px;
 }
 
@@ -355,6 +421,7 @@ a {
 #project .monitor_in img {
     display: block;
     width: 420px;
+    height: 230px;
 }
 
 
