@@ -39,7 +39,7 @@ a {
 
 #header .header_in {
     margin: 0 auto;
-    width: 1200px;
+    width: 68%;
     height: 90px;
 }
 
@@ -134,8 +134,8 @@ a {
 
 #profile .profile_img {
     float: left;
-    margin: 50px 0 0 270px;
-    width: 400px;
+    margin: 50px 0 0 13%;
+    width: 50%;
     height: 500px;
     position: relative;
 }
@@ -144,16 +144,16 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 600px;
+    max-width: 65%;
     border-radius: 50% 25%;
 }
 
 #profile .history {
-    width: 600px;
+    width: 60%;
     height: 600px;
     position: absolute;
-    top: 1180px;
-    left: 950px;
+    top: 1200px;
+    left: 38%;
 }
 
 #profile .history h3 {
@@ -164,7 +164,7 @@ a {
 
 #profile .history p {
     margin: 0 auto;
-    width: 600px;
+    width: 55%;
     font-size: 16px;
     color: #000;
     line-height: 30px;
@@ -209,7 +209,6 @@ a {
     margin-top: 50px;
     width: 700px;
     height: 600px;
-
 }
 
 #skill .list_in {
@@ -313,18 +312,12 @@ a {
 
 
 
-
-
-
-
-
-
-
 /* project */
 #project {
     width: 100%;
     height: 100vh;
     background-color: rgb(255, 255, 200);
+    position: relative;
 }
 
 #project h2 {
@@ -344,18 +337,42 @@ a {
 }
 
 #project .project_txt {
-    width: 700px;
+    width: 50%;
     height: 700px;
-    padding-left: 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     display: inline-block;
+    overflow: hidden;
     background-color: white;
 }
 
 #project .project_in ul {}
 
+#project .img_box .img {
+    width: 30%;
+    display: none;
+    position: absolute;
+    top: 270px;
+    left: 450px;
+}
+
+#project .img_box1 .img {
+    width: 30%;
+    display: none;
+    position: absolute;
+    top: 470px;
+    left: 450px;
+}
+
+#project .img_box2 .img {
+    width: 30%;
+    display: none;
+    position: absolute;
+    top: 670px;
+    left: 450px;
+}
+
 #project .project_in .box01 {
-    /* margin: 130px 80px 0 400px; */
     float: left;
     width: 500px;
     height: 450px;
@@ -381,7 +398,14 @@ a {
 #project li h3 {
     font-size: 25px;
     margin-top: 10px;
+    cursor: pointer;
+    display: inline-block;
     font-family: 'Arimo', sans-serif;
+}
+
+#project li span {
+    font-size: 16px;
+    color: #f54949;
 }
 
 #project li p {
@@ -459,34 +483,33 @@ a {
 
 
 
-
-
 #project .background {
     float: right;
-    margin: 230px 110px 0 0;
+    margin: 230px 11% 0 0;
     position: relative;
     width: 470px;
     height: 230px;
     border: 3px solid #fff;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 #project .project_in .monitor {
     margin-top: 100px;
-    max-width: 500px;
+    max-width: 50%;
 }
 
 #project .project_in .monitor_in {
     position: absolute;
     top: 0;
     left: 0;
-    width: 470px;
+    width: 100%;
     height: 230px;
     overflow: hidden;
 }
 
 #project .project_in .monitor_in ul {
-    width: 470px;
+    width: 100%;
     height: 230px;
     position: relative;
 }
@@ -580,6 +603,20 @@ input[type="submit"] {
     border: none
 }
 
+#contact .git {
+    display: inline-block;
+    margin: -10% 0 0 59%;
+}
+
+#contact .git img {
+    display: inline-block;
+    width: 50px;
+}
+
+#contact .git p {
+    font-size: 14px;
+    margin-left: 12px;
+}
 
 
 
@@ -616,7 +653,6 @@ input[type="submit"] {
 
     #header {
         width: 100%;
-
     }
 
     #header .header_in {
@@ -625,13 +661,16 @@ input[type="submit"] {
         height: 90px;
     }
 
+    #header .nav {
+        width: 60%;
+    }
 
 
 
 
 
 
-
+    /* 메인 */
     #main .home_in {
         float: right;
         position: absolute;
@@ -654,7 +693,7 @@ input[type="submit"] {
 
 
 
-
+    /* 프로필 */
     #profile .profile_img {
         float: left;
         margin: 80px 0 0 6vw;
@@ -700,25 +739,34 @@ input[type="submit"] {
 
 
 
+    /* 스킬 */
+    #skill .skill_in {
+        width: 90%;
+    }
 
-
-
+    #skill .list {
+        /* display: none; */
+        float: left;
+        margin-top: 50px;
+        width: 35%;
+        height: 600px;
+    }
 
     #skill .list_in {
         width: 500px;
         height: 400px;
-        margin: 70px 0 0 120px;
+        margin: 120px 0 0 4%;
         display: flex;
         flex-direction: column;
     }
 
-    #skill .list {
-        margin: 0 auto;
-        margin-top: 50px;
-        width: 800px;
-        height: 500px;
-        border: 5px solid #fff;
-        border-radius: 10px;
+    #skill .skill_box {
+        margin-right: 0;
+        width: 48%;
+    }
+
+    #skill .skill_box li {
+        padding: 10px 0;
     }
 
 
@@ -726,13 +774,70 @@ input[type="submit"] {
 
 
 
+
+    /* 프로젝트 */
+    #project .project_in {
+        width: 100%;
+    }
+
+    #project .project_txt {
+        width: 43%;
+        margin-left: 3%;
+    }
+
+    #project .img_box .img {
+        width: 30%;
+        display: none;
+        position: absolute;
+        top: 270px;
+        left: 20%;
+    }
+
+    #project .img_box1 .img {
+        width: 30%;
+        display: none;
+        position: absolute;
+        top: 490px;
+        left: 20%;
+    }
+
+    #project .img_box2 .img {
+        width: 30%;
+        display: none;
+        position: absolute;
+        top: 720px;
+        left: 20%;
+    }
+
     #project .project_in .box01 {
-        margin: 130px 80px 0 50px;
+        margin: 130px 0 0 0;
         float: left;
-        width: 500px;
+        width: 100%;
         height: 450px;
     }
 
+    #project .background {
+        width: 40%;
+    }
+
+
+
+
+    /* contact */
+    #contact .git {
+        display: inline-block;
+        margin: -10% 0 0 64%;
+    }
+
+    #contact .git img {
+        display: inline-block;
+        width: 50px;
+    }
+
+    #contact .git p {
+        font-size: 14px;
+        margin-left: 12px;
+    }
 }
 
 
@@ -755,12 +860,20 @@ input[type="submit"] {
         height: 90px;
     }
 
+    #header .nav {
+        width: 70%;
+    }
 
 
 
+    /* 메인 */
+    #main .home {
+        height: 800px;
+    }
 
-
-
+    #main .home img {
+        height: 800px;
+    }
 
     #main .home_in {
         float: right;
@@ -784,6 +897,10 @@ input[type="submit"] {
 
 
 
+    /* 프로필 */
+    #profile {
+        height: 90vh;
+    }
 
     #profile .profile_img {
         float: left;
@@ -806,7 +923,7 @@ input[type="submit"] {
         /* 600px */
         height: 600px;
         position: absolute;
-        top: 1200px;
+        top: 1080px;
         left: 400px;
     }
 
@@ -831,36 +948,60 @@ input[type="submit"] {
 
 
 
-
+    /* 스킬 */
     #skill {
         width: 100%;
-        height: 90vh;
+        height: 130vh;
+    }
+
+    #skill .skill_in {
+        width: 90%;
+        height: 100vh;
     }
 
     #skill .list_in {
         width: 500px;
         height: 400px;
-        margin: 70px 0 0 120px;
+        margin: 70px 0 0 25%;
         display: flex;
         flex-direction: column;
     }
 
     #skill .list {
-        margin: 0 auto;
-        margin-top: 50px;
+        margin-top: 0;
         width: 800px;
         height: 500px;
-        border: 5px solid #fff;
         border-radius: 10px;
+    }
+
+    #skill .skill_box {
+        width: 85%;
+        height: auto;
+        margin: 0 20px;
+    }
+
+    #skill .skill_box li {
+        width: 90%;
+        padding: 0;
+    }
+
+    #skill .skill_box h4 {
+        font-size: 16px;
+    }
+
+    #skill .skill_box p {
+        font-size: 14px;
+    }
+
+    #skill .skill_box .name {
+        font-size: 16px;
     }
 
 
 
 
 
-
-
-
+    /* 프로젝트 */
     #project {
         width: 100%;
         height: 100vh;
@@ -879,6 +1020,7 @@ input[type="submit"] {
     #project .project_in {}
 
     #project .project_in ul {}
+
 
     #project .project_in .box01 {
         margin: 100px 40px 0 60px;
@@ -941,4 +1083,25 @@ input[type="submit"] {
         left: 15px;
         max-width: 370px;
     }
+
+
+
+
+
+    /* contact */
+    #contact .git {
+        display: inline-block;
+        margin: -10% 0 0 66%;
+    }
+
+    #contact .git img {
+        display: inline-block;
+        width: 50px;
+    }
+
+    #contact .git p {
+        font-size: 14px;
+        margin-left: 12px;
+    }
+
 }

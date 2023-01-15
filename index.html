@@ -12,11 +12,11 @@
         href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Kanit:ital,wght@0,500;1,100;1,600&family=Poor+Story&family=IBM+Plex+Sans+KR&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" media="all and (max-width:480px)" href="./css/index480.css">
 
     <script src="./js/jquery.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/nav.js"></script>
+    <script src="./js/index.js"></script>
     <script src="./js/index480.js"></script>
     <script>
         $(document).ready(function () {
@@ -44,7 +44,7 @@
 
 
         <!-- header -->
-        <header id="header">
+        <div id="header">
             <div class="header_in">
                 <h1 class="logo">ChaeRim</h1>
                 <div class="nav">
@@ -57,8 +57,7 @@
                     </ul>
                 </div>
             </div>
-
-        </header>
+        </div>
 
 
 
@@ -165,7 +164,7 @@
                             </li>
                             <li>
                                 <P class="text">프론트엔드 개발자 과정을 배우면서
-                                    XD, Html, Css, jQuery, JavaScript, Node, React를 배웠습니다.<br>
+                                    XD, Html, Css, jQuery, JavaScript, Node, React를 배웠습니다.
                                     모두 처음 접하는 것 들인 만큼 배우면서 부족한 부분도 많았고
                                     아직도 배워야할게 많다는 것을 알고 꾸준히 공부하고 있습니다.
                                 </P>
@@ -190,32 +189,50 @@
                     <div class="project_txt">
                         <ul>
                             <li class="box02">
-                                <h3>XD작업</h3>
-                                <p>22.08.22~22.09<br>
-                                    XD사용법에 익숙해지기 위해서 기존 투썸 플레이스
-                                    홈페이지를 변경해서 제작해 보았습니다.</p>
+                                <div class="img_box">
+                                    <h3>XD작업 리뉴얼 - 투썸 플레이스</h3>
+                                    <span>
+                                        < click</span>
+                                            <img class="img" src="./images/twosome.png" alt="">
+                                </div>
+                                <p>22.08.22 ~ 22.09<br>
+                                    XD사용법에 익숙해지기 위해 기존 투썸 플레이스
+                                    홈페이지를 더 간편하게 변경해 제작해 보았습니다.
+                                    XD작업은 처음 이였지만 금방 익숙하게 다룰 수 있었습니다.
+                                    아직 코딩을 잘 하지 못해서 SNS영역 위치 잡는것이 생각보다 어려웠지만
+                                    금방 인터넷에 검색을 해서 영역을 맞추었습니다.</p>
                                 <a href="https://chae-rim.github.io/twosome/">결과물보기</a>
                                 <a href="#">코드보기</a>
                             </li>
                             <li class="box02">
-                                <h3>클론코딩</h3>
-                                <p>22.10~<br>
+                                <div class="img_box1">
+                                    <h3>클론코딩 - 대한항공</h3>
+                                    <span>
+                                        < click</span>
+                                            <img class="img" src="./images/koreanair.png" alt="">
+                                </div>
+                                <p>22.10 ~ 22.10<br>
                                     코딩하는 방법에 익숙해지기 위해서 기존 대한항공
-                                    홈페이지를 따라서 만들어 보았습니다</p>
+                                    홈페이지를 클론코딩 했습니다.익숙하지 않은 position 사용법과
+                                    제이쿼리를 사용해보기 위해 대한항공 페이지를 골랐습니다.
+                                    메인 이미지 옆에 서치부분의 영역잡기가 시간이 조금 걸렸지만
+                                    반복해서 연습하는 것이라 금방 익숙해지고 다음 영역잡는 부분에서는
+                                    빠르게 해결할 수 있었습니다.
+                                </p>
                                 <a href="https://chae-rim.github.io/Koreanair/" target="_blank">결과물보기</a>
                                 <a href="#">코드보기</a>
                             </li>
                             <li class="box02">
-                                <h3>남양몰</h3>
-                                <p>22.12~<br>
-                                    리액트 수업을 하면서 만들어 보았습니다.</p>
-                                <a href="#" target="_blank">결과물보기</a>
-                                <!-- <a href="#">코드보기</a> -->
-                            </li>
-                            <li class="box02">
-                                <h3>LG전자</h3>
-                                <p>22.12~<br>
-                                    리액트에 익숙해지기 위헤 만들어 보았습니다.</p>
+                                <div class="img_box2">
+                                    <h3>LG전자</h3>
+                                    <span>
+                                        < click</span>
+                                            <img class="img" src="./images/lg.png" alt="">
+                                </div>
+                                <p>진행중<br>
+                                    첫 리액트 프로젝트이며 공부 하면서 익숙해지기 위해
+                                    진행중 입니다. 설치해야할 것도 많고 외부로 돌려 링크를 달아 주는것 까지
+                                    익숙하지 않아 시간이 걸리지만 꾸준히 찾아가며 프로젝트 진행중 입니다.</p>
                                 <a href="#" target="_blank">결과물보기</a>
                                 <!-- <a href="#">코드보기</a> -->
                             </li>
@@ -230,6 +247,9 @@
                                 </li>
                                 <li class="twosome">
                                     <img src="./images/twosome.png" alt="">
+                                </li>
+                                <li class="lg">
+                                    <img src="./images/lg.png" alt="">
                                 </li>
                             </ul>
                         </div>
@@ -300,6 +320,12 @@
                                     });
                             });
                     </script>
+                </div>
+                <div class="git">
+                    <a href="https://github.com/chae-rim">
+                        <img src="./images/github.png" alt="">
+                    </a>
+                    <p>click</p>
                 </div>
             </div>
             <div id="finish">

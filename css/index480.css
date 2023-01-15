@@ -27,7 +27,6 @@ a {
 
 #header.on {
     background-color: rgba(255, 255, 255, 0.838);
-    /* background-color: pink; */
     border-bottom: 1px solid #ccc;
 }
 
@@ -190,10 +189,10 @@ a {
 
 
 
-/* skill */
+/* 스킬 */
 #skill {
     width: 100%;
-    height: 670px;
+    height: 1000px;
     background-color: rgb(241, 255, 227);
 }
 
@@ -206,53 +205,38 @@ a {
     font-family: 'Arimo', sans-serif;
 }
 
+#skill .skill_in {
+    height: 880px;
+}
+
 #skill .skill_box {
     margin: 0 auto;
     width: 90%;
-    height: 650px;
+    height: auto;
     /* background-color: #f54949; */
 }
 
 #skill .skill_box ul {
     width: 100%;
     height: 200px;
-    margin-top: 70px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* background-color: antiquewhite; */
+    margin-top: 0;
 }
 
 #skill .skill_box li {
-    width: 200px;
-    height: 250px;
-    padding: 20px 20px;
-    box-sizing: border-box;
-    border: 1px solid yellow;
-    border-radius: 30%;
-    line-height: 25px;
-    background-color: rgb(255, 255, 172);
+    width: 90%;
+    padding: 0;
 }
 
 #skill .skill_box h4 {
     font-size: 16px;
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box;
-    font-family: 'Poor Story', cursive;
 }
 
 #skill .skill_box p {
     font-size: 14px;
-    padding-top: 0;
-    box-sizing: border-box;
-    font-family: 'Poor Story', cursive;
 }
 
 #skill .skill_box .name {
     font-size: 16px;
-    text-align: center;
-    margin-top: 50px;
 }
 
 #skill .skill_box .text {
@@ -261,33 +245,18 @@ a {
     color: #000;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* #skill .list {
+#skill .list {
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 0;
     width: 80%;
-    height: 500px;
-    border: 5px solid #fff;
+    height: 430px;
     border-radius: 10px;
 }
 
 #skill .list_in {
     width: 350px;
     height: 400px;
-    margin: 70px 0 0 0;
+    margin: 30px 0 0 30px;
 }
 
 #skill .list_in li {
@@ -326,7 +295,7 @@ a {
 #skill .list_in h5 {
     margin-left: 15px;
     font-size: 15px;
-} */
+}
 
 
 
@@ -334,10 +303,10 @@ a {
 
 
 
-/* project */
+/* 프로젝트 */
 #project {
     width: 100%;
-    height: 900px;
+    height: 1080px;
     background-color: rgb(255, 255, 200);
 }
 
@@ -352,7 +321,37 @@ a {
 
 #project .project_in {}
 
+#project .project_txt {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
 #project .project_in ul {}
+
+#project .img_box .img {
+    width: 90%;
+    display: none;
+    position: absolute;
+    top: 145px;
+    left: 22px;
+}
+
+#project .img_box1 .img {
+    width: 90%;
+    display: none;
+    position: absolute;
+    top: 395px;
+    left: 22px;
+}
+
+#project .img_box2 .img {
+    width: 90%;
+    display: none;
+    position: absolute;
+    top: 645px;
+    left: 22px;
+}
 
 #project .project_in .box01 {
     margin: 60px 0 0 20px;
@@ -400,28 +399,66 @@ a {
 }
 
 #project .background {
+    float: right;
+    margin: 30px 0.5% 0 0;
     position: relative;
+    width: 470px;
+    height: 230px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 #project .project_in .monitor {
-    margin-top: -30px;
-    margin-left: 20px;
-    max-width: 440px;
+    margin-top: 100px;
+    max-width: 50%;
 }
 
 #project .project_in .monitor_in {
     position: absolute;
-    top: -16px;
-    left: 30px;
-    max-width: 420px;
-    height: auto;
-    background-color: wheat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+
+#project .project_in .monitor_in ul {
+    width: 100%;
+    height: 230px;
+    position: relative;
+}
+
+#project .project_in .monitor_in ul li:nth-child(1) {
+    position: absolute;
+    top: 0px;
+    left: 0%;
+}
+
+#project .project_in .monitor_in ul li:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    left: 100%;
 }
 
 #project .monitor_in img {
     display: block;
-    width: 420px;
-    height: 230px;
+    width: 470px;
+}
+
+#project .koreanair {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    max-width: 470px;
+    height: auto;
+}
+
+#project .twosome {
+    height: 231px;
+    position: absolute;
+    top: 113px;
+    left: 485px;
 }
 
 
@@ -486,6 +523,26 @@ input[type="submit"] {
     border: none
 }
 
+#contact .git {
+    margin: -10% 0 0 0;
+    position: relative;
+}
+
+#contact .git img {
+    float: right;
+    margin-right: 20px;
+    width: 50px;
+}
+
+#contact .git p {
+    float: right;
+    font-size: 14px;
+    padding: 50px -30px 0 30px;
+    box-sizing: border-box;
+    position: absolute;
+    top: -20px;
+    right: 32px;
+}
 
 
 
@@ -493,7 +550,8 @@ input[type="submit"] {
 
 
 
-/* finish */
+
+/* 하단 */
 #finish {
     width: 100%;
     height: 150px;
@@ -509,7 +567,3 @@ input[type="submit"] {
     font-family: 'Arimo', sans-serif;
     color: rgb(24, 24, 24);
 }
-
-/* #wrap {
-    display: none;
-} */
