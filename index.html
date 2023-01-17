@@ -84,14 +84,34 @@
             <!-- profile -->
             <div id="profile">
                 <h2>ABOUT ME</h2>
+                <div class="link_box">
+                    <ul>
+                        <li>
+                            <div class="git">
+                                <a href="https://github.com/chae-rim">
+                                    <img src="./images/github.png" alt="">
+                                </a>
+                                <p>github</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="blog">
+                                <a href="https://blog.naver.com/cofla1421">
+                                    <img src="./images/blog.png" alt="">
+                                </a>
+                                <p>blog</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                 <div class="profile_img">
                     <img src="./images/KakaoTalk_20221103_160307717.jpg" alt="" />
                 </div>
                 <div class="history">
                     <h3>"안녕하세요! 꿈을 디자인하는 프론트엔드 개발자 박채림입니다."</h3>
                     <p>나는 어떤 프론트엔드 개발자가 되어야 할까? 프론트엔드 공부를 하면서 고민해왔습니다.
-                        결국 이 일을 즐겨야 멀리갈 수 있겠다는 생각을 했습니다.
-                        작은일에도 웃으면서 할 수 있는 프론트엔드 개발자가 되겠습니다.<br><br>
+                        결국 이 일을 즐겨야 멀리 갈 수 있겠다는 생각을 했습니다.
+                        작은 일에도 웃으면서 할 수 있는 프론트엔드 개발자가 되겠습니다.<br><br>
                         저는 22년 8월 'UI/UX 프론트엔드' 국비지원 교육을 통해 프론트엔드 개발자 과정을 시작하였습니다.
                         현재는 Javascript의 매력에 빠져 더 좋은 프론트엔드 개발자가 되기 위해 노력하고 있습니다.
                         아직은 부족하지만 UX/UI에 많은 관심을 가지고 있습니다.
@@ -157,16 +177,16 @@
                                 <p class="name">XD - Html - Css - jQuery - JavaScript - React</P>
                             </li>
                             <li>
-                                <P class="text">XD - 기본적인 디자인을 할수 있습니다.<br>
+                                <P class="text">XD - 와이어프레임과 프로토타입을 만들 수 있습니다.<br>
                                     Html, Css - 용어를 이해하며 태그와 요소 레이아웃을 구성할 수 있습니다.<br>
                                     jQuery, JavaScript - 용어를 이해하며 이벤트 적용할 수 있습니다.<br>
-                                    React - 컴퍼넌트 스타일 지정, 배열을 적용할 수 있습니다.</P>
+                                    React - 컴포넌트 스타일 지정, 배열을 적용할 수 있습니다.</P>
                             </li>
                             <li>
                                 <P class="text">프론트엔드 개발자 과정을 배우면서
                                     XD, Html, Css, jQuery, JavaScript, Node, React를 배웠습니다.
                                     모두 처음 접하는 것 들인 만큼 배우면서 부족한 부분도 많았고
-                                    아직도 배워야할게 많다는 것을 알고 꾸준히 공부하고 있습니다.
+                                    아직도 배워야 할 게 많다는 것을 알고 꾸준히 공부하고 있습니다.
                                 </P>
                             </li>
 
@@ -181,79 +201,109 @@
 
 
 
-
             <!-- project -->
             <div id="project">
                 <h2>PROJECT</h2>
-                <div class="project_in">
-                    <div class="project_txt">
-                        <ul>
-                            <li class="box02">
-                                <div class="img_box">
-                                    <h3>XD작업 리뉴얼 - 투썸 플레이스</h3>
-                                    <span>
-                                        < click</span>
-                                            <img class="img" src="./images/twosome.png" alt="">
-                                </div>
-                                <p>22.08.22 ~ 22.09<br>
-                                    XD사용법에 익숙해지기 위해 기존 투썸 플레이스
-                                    홈페이지를 더 간편하게 변경해 제작해 보았습니다.
-                                    XD작업은 처음 이였지만 금방 익숙하게 다룰 수 있었습니다.
-                                    아직 코딩을 잘 하지 못해서 SNS영역 위치 잡는것이 생각보다 어려웠지만
-                                    금방 인터넷에 검색을 해서 영역을 맞추었습니다.</p>
-                                <a href="https://chae-rim.github.io/twosome/">결과물보기</a>
-                                <a href="#">코드보기</a>
-                            </li>
-                            <li class="box02">
-                                <div class="img_box1">
-                                    <h3>클론코딩 - 대한항공</h3>
-                                    <span>
-                                        < click</span>
-                                            <img class="img" src="./images/koreanair.png" alt="">
-                                </div>
-                                <p>22.10 ~ 22.10<br>
-                                    코딩하는 방법에 익숙해지기 위해서 기존 대한항공
-                                    홈페이지를 클론코딩 했습니다.익숙하지 않은 position 사용법과
-                                    제이쿼리를 사용해보기 위해 대한항공 페이지를 골랐습니다.
-                                    메인 이미지 옆에 서치부분의 영역잡기가 시간이 조금 걸렸지만
-                                    반복해서 연습하는 것이라 금방 익숙해지고 다음 영역잡는 부분에서는
-                                    빠르게 해결할 수 있었습니다.
+                <div id="project_in">
+                    <div class="left_btn">
+                        <img src="./images/left.png" alt="" />
+                    </div>
+                    <div class="right_btn">
+                        <img src="./images/right.png" alt="" />
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="img_box">
+                                <img class="pro_img" src="./images/koreanair.jpeg" alt="" />
+                            </div>
+                            <div class="txt_box">
+                                <h3>클론코딩 - 대한항공</h3>
+                                <p class="pro_txt">22.10 ~ 22.10<br><br>
+                                    기존 웹사이트의 기능들을 직접 구현했습니다.
+                                    예약 조회와 로그인 버튼 클릭 시 해당 콘텐츠를 출력하는 효과와
+                                    nav 버튼에 마우스 click 시에 nav 서브메뉴가 나타나는 효과,
+                                    메인 이미지 jQuery 자동 슬라이드 효과,
+                                    지금 떠나기 좋은 여행 이미지 좌우 버튼 click 시 이미지 이동 jQuery 효과를 구현해 보았습니다.
+                                    <br><br>
+                                    이 프로젝트를 통해 jQuery의 기본 문법을 이해할 수 있게 되었고,
+                                    jQuery를 이용한 기능을 구상하고 구현할 수 있게 되었습니다.
                                 </p>
-                                <a href="https://chae-rim.github.io/Koreanair/" target="_blank">결과물보기</a>
-                                <a href="#">코드보기</a>
-                            </li>
-                            <li class="box02">
-                                <div class="img_box2">
-                                    <h3>LG전자</h3>
-                                    <span>
-                                        < click</span>
-                                            <img class="img" src="./images/lg.png" alt="">
-                                </div>
-                                <p>진행중<br>
-                                    첫 리액트 프로젝트이며 공부 하면서 익숙해지기 위해
-                                    진행중 입니다. 설치해야할 것도 많고 외부로 돌려 링크를 달아 주는것 까지
-                                    익숙하지 않아 시간이 걸리지만 꾸준히 찾아가며 프로젝트 진행중 입니다.</p>
-                                <a href="#" target="_blank">결과물보기</a>
-                                <!-- <a href="#">코드보기</a> -->
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="background">
-                        <!-- <img class="monitor" src="./images/monitor-gcde4fb680_1280.png" alt="" /> -->
-                        <div class="monitor_in">
-                            <ul>
-                                <li class="koreanair">
-                                    <img src="./images/koreanair.png" alt="" />
-                                </li>
-                                <li class="twosome">
-                                    <img src="./images/twosome.png" alt="">
-                                </li>
-                                <li class="lg">
-                                    <img src="./images/lg.png" alt="">
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                                <p class="skills">
+                                    사용한 기술
+                                    <br>
+                                    HTML, CSS, jQuery
+                                </p>
+                                <a href="https://chae-rim.github.io/Koreanair/" target="_blank">페이지로 이동</a>
+                            </div>
+                            <!-- </div> -->
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img class="pro_img" src="./images/photofolio.jpg" alt="" />
+                            </div>
+                            <div class="txt_box">
+                                <h3>포트폴리오(현재 페이지)</h3>
+                                <p class="pro_txt">22.12 ~ 진행중<br><br>
+                                    jQuery를 이용한 전체 작업을 진행하였습니다.
+                                    nav 버튼 클릭으로 콘텐츠이동하는 기능,
+                                    스크롤 하였을 때 skill 그래프 애니메이션 효과,
+                                    Project 좌우 버튼 클릭 시 Project 이동 jQuery 효과를 구현해 보았습니다.
+                                    <br><br>
+                                    이 프로젝트를 통해 jQuery의 기본 문법을 복습 할 수 있었으며,
+                                    jQuery를 이용한 기능을 구상하고 구현할 수 있게 되었습니다.
+                                </p>
+                                <p class="skills">
+                                    사용한 기술
+                                    <br>
+                                    HTML, CSS, jQuery
+                                </p>
+                                <a href="https://chae-rim.github.io/cofla1421/" target="_blank">페이지로 이동</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img class="pro_img" src="./images/twosome.jpeg" alt="" />
+                            </div>
+                            <div class="txt_box">
+                                <h3>XD작업 리뉴얼 - 투썸 플레이스</h3>
+                                <p class="pro_txt">22.08.22 ~ 22.09<br><br>
+                                    UI/UX 기반 프론트엔드 웹 개발과정에서 메인 프로젝트로 작업한 웹페이지입니다.
+                                    와이어 프레임과 프로토타입 작업을 진행하였고,
+                                    여러 개의 프랜차이즈 카페를 비교하여 필요한 기능과 디자인 요소들을 반영하였습니다.
+                                    nav 버튼 hover 시 글자 색상 변경과, click 시 서서히 슬라이드 되는 효과
+                                    coffee 버튼과 이벤트 버튼 클릭 시 해당 콘텐츠를 출력하는 효과 등을 구현하였습니다.
+                                    <br><br>
+                                    이 프로젝트를 통하여 와이어 프레임과 프로토타입의 작업 방식을 이해할 수 있었고,
+                                    프로토타입을 바탕으로 HTML, CSS, jQuery를 적용해가면서 수정하고 보완하는 방법을 배울 수 있었습니다.
+                                </p>
+                                <p class="skills">
+                                    사용한 기술
+                                    <br>
+                                    HTML, CSS, jQuery
+                                </p>
+                                <a href="https://chae-rim.github.io/twosome/" target="_blank">페이지로 이동</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img class="pro_img" src="./images/lg.png" alt="" />
+                            </div>
+                            <div class="txt_box">
+                                <h3>LG전자</h3>
+                                <p class="pro_txt">진행중<br><br>
+                                    REACT를 이용한 리뉴얼 작업 중입니다. 첫 REACT 프로젝트이며
+                                    이 프로젝트를 통해 REACT의 Component를 활용할 수 있게 되었고,
+                                    NODE.JS를 이용하여 npm과 JSX로 조금 더 쉽고 편하게 REACT를 이용할 수 있게 되었습니다.
+                                </p>
+                                <p class="skills">
+                                    사용한 기술
+                                    <br>
+                                    HTML, CSS, REACT, NODEJS
+                                </p>
+                                <a href="https://chae-rim.github.io/Koreanair/" target="_blank">페이지로 이동</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -320,12 +370,6 @@
                                     });
                             });
                     </script>
-                </div>
-                <div class="git">
-                    <a href="https://github.com/chae-rim">
-                        <img src="./images/github.png" alt="">
-                    </a>
-                    <p>click</p>
                 </div>
             </div>
             <div id="finish">

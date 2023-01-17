@@ -71,53 +71,13 @@ $(function () {
 
 
 // project
-
 $(document).ready(function () {
-    var current = 0
-    var setIntervalId;
-
-
-    timer();
-    function timer() {
-        setIntervalId = setInterval(function () {
-            var n = current + 1;
-            if (n == 3) {
-                n = 0;
-            }
-            move(n);
-        }, 3000)
-
-    }
-    function move(n) {
-        var currentEl = $('.monitor_in li').eq(current);
-        var nextEl = $('.monitor_in li').eq(n);
-
-
-        currentEl.css({ left: '0%' }).animate({ left: '-100%' });
-        nextEl.css({ left: '100%' }).animate({ left: '0%' });
-
-
-        current = n;
-    }
-});
-
-
-
-// 프로젝트
+    $('.right_btn').click(function () {
+        $('#project_in>ul>li:first').insertAfter('#project_in>ul>li:last');
+    })
+})
 $(document).ready(function () {
-    $('.img_box h3').click(function () {
-        $('.img_box .img').toggle();
-    });
-});
-
-$(document).ready(function () {
-    $('.img_box1 h3').click(function () {
-        $('.img_box1 .img').toggle();
-    });
-});
-
-$(document).ready(function () {
-    $('.img_box2 h3').click(function () {
-        $('.img_box2 .img').toggle();
-    });
-});
+    $('.left_btn').click(function () {
+        $('#project_in>ul>li:last').insertBefore('#project_in>ul>li:first');
+    })
+})

@@ -134,7 +134,8 @@ a {
 /* 프로필 */
 #profile {
     width: 100%;
-    height: auto;
+    height: 850px;
+    position: relative;
     background-color: azure;
 }
 
@@ -146,6 +147,35 @@ a {
     padding-top: 20px;
     box-sizing: border-box;
     font-family: 'Arimo', sans-serif;
+}
+
+#profile .link_box {
+    display: inline-block;
+    margin: 660px 0 0 180px;
+    position: absolute;
+    align-items: flex-end;
+}
+
+#profile .link_box li {
+    margin-right: 30px;
+}
+
+#profile .git img {
+    width: 40px;
+}
+
+#profile .git p {
+    font-size: 12px;
+    margin: 10px 2px;
+}
+
+#profile .blog img {
+    width: 40px;
+}
+
+#profile .blog p {
+    font-size: 12px;
+    margin: 10px 8px;
 }
 
 #profile .profile_img {
@@ -305,165 +335,34 @@ a {
 
 /* 프로젝트 */
 #project {
-    width: 100%;
-    height: 1080px;
-    background-color: rgb(255, 255, 200);
+    height: 1200px;
 }
 
 #project h2 {
     font-size: 30px;
-    text-align: center;
-    color: rgb(62, 62, 62);
-    padding-top: 20px;
-    box-sizing: border-box;
-    font-family: 'Arimo', sans-serif;
 }
 
-#project .project_in {}
+#project_in {
+    width: 90%;
+    height: 1000px;
+}
 
-#project .project_txt {
-    display: block;
-    margin: 0 auto;
+#project_in>ul>li {
+    width: 432px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+#project_in .txt_box {
+    margin-top: 30px;
     width: 90%;
 }
 
-#project .project_in ul {}
-
-#project .img_box .img {
+#project_in .img_box {
     width: 90%;
-    display: none;
-    position: absolute;
-    top: 145px;
-    left: 22px;
+    height: 500px;
 }
-
-#project .img_box1 .img {
-    width: 90%;
-    display: none;
-    position: absolute;
-    top: 395px;
-    left: 22px;
-}
-
-#project .img_box2 .img {
-    width: 90%;
-    display: none;
-    position: absolute;
-    top: 645px;
-    left: 22px;
-}
-
-#project .project_in .box01 {
-    margin: 60px 0 0 20px;
-    width: 90%;
-    height: 370px;
-    border: 3px solid rgb(249, 195, 241);
-    border-radius: 5px;
-}
-
-#project .project_in .box01:last-child {
-    margin: 60px 0 0 0;
-    border: 0;
-    background-color: transparent;
-    border-radius: 0;
-}
-
-#project .box02 {
-    line-height: 20px;
-}
-
-#project .box02:first-child {
-    padding-top: 20px;
-}
-
-#project li h3 {
-    font-size: 16px;
-    margin-top: 10px;
-    font-family: 'Arimo', sans-serif;
-}
-
-#project li p {
-    font-size: 12px;
-    margin-bottom: 10px;
-    font-family: 'Arimo', sans-serif;
-}
-
-#project li a {
-    border: 1px solid #ccc;
-    font-size: 14px;
-    font-family: 'Arimo', sans-serif;
-    padding: 5px 20px;
-    box-sizing: border-box;
-    margin-right: 10px;
-    color: rgb(252, 151, 151);
-}
-
-#project .background {
-    float: right;
-    margin: 30px 0.5% 0 0;
-    position: relative;
-    width: 470px;
-    height: 230px;
-    border: 3px solid #fff;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-#project .project_in .monitor {
-    margin-top: 100px;
-    max-width: 50%;
-}
-
-#project .project_in .monitor_in {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 230px;
-    overflow: hidden;
-}
-
-#project .project_in .monitor_in ul {
-    width: 100%;
-    height: 230px;
-    position: relative;
-}
-
-#project .project_in .monitor_in ul li:nth-child(1) {
-    position: absolute;
-    top: 0px;
-    left: 0%;
-}
-
-#project .project_in .monitor_in ul li:nth-child(2) {
-    position: absolute;
-    top: 0px;
-    left: 100%;
-}
-
-#project .monitor_in img {
-    display: block;
-    width: 470px;
-}
-
-#project .koreanair {
-    position: absolute;
-    top: 120px;
-    left: 0;
-    max-width: 470px;
-    height: auto;
-}
-
-#project .twosome {
-    height: 231px;
-    position: absolute;
-    top: 113px;
-    left: 485px;
-}
-
-
-
-
 
 
 
