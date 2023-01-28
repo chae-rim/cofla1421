@@ -1,16 +1,16 @@
 // nav
 $(function () {
     $('.nav li a').mouseenter(function () {
-        $(this).css({ color: 'white' })
+        $(this).css({ color: 'pink' })
     })
     $('.nav a').mouseleave(function () {
-        $(this).css({ color: 'black' })
+        $(this).css({ color: 'white' })
     })
 })
 
 $(function () {
     var menu = $('.nav > li');
-    var contents = $('#main > div');
+    var contents = $('#wrap > section');
 
     $('.nav li').click(function (event) {
         event.preventDefault();
@@ -18,7 +18,7 @@ $(function () {
         var tg = $(this);
         var i = tg.index();
 
-        var section = $('#main > div').eq(i);
+        var section = $('#wrap > section').eq(i);
         var tt = section.offset().top;
 
         $('html, body').stop().animate({ scrollTop: tt });

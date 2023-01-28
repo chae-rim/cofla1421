@@ -49,6 +49,7 @@ a {
     height: 100px;
     margin-top: 30px;
     font-size: 40px;
+    color: white;
     font-family: 'Kanit', sans-serif;
 }
 
@@ -69,15 +70,33 @@ a {
 
 #header .nav a {
     font-size: 20px;
-    color: #000;
+    color: white;
     transition: all 0.5s;
 }
+
+
+
+
+
+
 
 #main {
     width: 100%;
 }
 
-#main .home {
+#main .video_area {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#spotVideo {
+    width: 100%;
+}
+
+#spotVideo source {}
+
+/* #main .home {
     width: 100%;
     height: 100vh;
 }
@@ -86,7 +105,7 @@ a {
     width: 100%;
     height: 100vh;
     position: relative;
-}
+} */
 
 #main .home_in {
     float: right;
