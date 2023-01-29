@@ -74,6 +74,9 @@ a {
     transition: all 0.5s;
 }
 
+#header .nav a:hover {
+    color: hotpink;
+}
 
 
 

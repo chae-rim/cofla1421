@@ -1,11 +1,18 @@
 // nav
-$(function () {
-    $('.nav li a').mouseenter(function () {
-        $(this).css({ color: 'pink' })
+$(document).ready(function () {
+    var status = true
+
+    $(window).scroll(function () {
+        var sct = $(document).scrollTop()
+        if (sct > 800 && status == true) {
+            status = false;
+            $('#header').addClass('on');
+        } else if (sct < 800 && status == false) {
+            status = true
+            $('#header').removeClass('on');
+        }
     })
-    $('.nav a').mouseleave(function () {
-        $(this).css({ color: 'white' })
-    })
+
 })
 
 $(function () {
