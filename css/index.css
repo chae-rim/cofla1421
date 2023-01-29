@@ -32,10 +32,10 @@ a {
     transition: all 0.5s;
 }
 
-#header.on {
+/* #header.on {
     background-color: rgba(255, 255, 255, 0.838);
     border-bottom: 1px solid #ccc;
-}
+} */
 
 #header .header_in {
     margin: 0 auto;
@@ -142,13 +142,15 @@ a {
 #profile {
     width: 100%;
     height: 100vh;
-    background-color: azure;
+    /* background-color: azure; */
+    background-color: rgb(0, 0, 20);
 }
 
 #profile h2 {
     font-size: 70px;
     text-align: center;
-    color: rgb(62, 62, 62);
+    /* color: rgb(62, 62, 62); */
+    color: aliceblue;
     padding-top: 100px;
     box-sizing: border-box;
     font-family: 'Arimo', sans-serif;
@@ -169,12 +171,16 @@ a {
 
 #profile .git img {
     width: 70px;
+    background-color: white;
+    border-radius: 50%;
+
 }
 
 #profile .git p {
     font-size: 16px;
     font-weight: 400;
     margin: 10px 12px;
+    color: white;
 }
 
 #profile .blog img {
@@ -185,6 +191,7 @@ a {
     font-size: 16px;
     font-weight: 400;
     margin: 10px 18px;
+    color: white;
 }
 
 #profile .profile_img {
@@ -221,7 +228,7 @@ a {
     margin: 0 auto;
     width: 55%;
     font-size: 16px;
-    color: #000;
+    color: white;
     line-height: 30px;
 
 }
@@ -240,13 +247,14 @@ a {
 #skill {
     width: 100%;
     height: 100vh;
-    background-color: rgb(241, 255, 227);
+    /* background-color: rgb(241, 255, 227); */
+    background-color: rgb(0, 0, 20);
 }
 
 #skill h2 {
     font-size: 70px;
     text-align: center;
-    color: rgb(62, 62, 62);
+    color: aliceblue;
     padding-top: 100px;
     box-sizing: border-box;
     font-family: 'Arimo', sans-serif;
@@ -288,7 +296,7 @@ a {
     height: 50px;
     font-weight: 300;
     color: #666;
-    border: 1px solid #000;
+    border: 1px solid white;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -301,7 +309,7 @@ a {
     height: 60px;
     padding: 15px 0 0 10px;
     box-sizing: border-box;
-    background-color: aquamarine;
+    background-color: rgb(206, 255, 239);
 }
 
 #skill .list_in .box p {
@@ -310,6 +318,7 @@ a {
 
 #skill .list_in h5 {
     font-size: 25px;
+    color: white;
 }
 
 #skill .skill_box {
@@ -335,6 +344,7 @@ a {
     font-size: 24px;
     box-sizing: border-box;
     font-family: 'Poor Story', cursive;
+    color: white;
 }
 
 #skill .skill_box p {
@@ -346,12 +356,12 @@ a {
 
 #skill .skill_box .name {
     font-size: 24px;
-    /* text-align: center; */
+    color: white;
 }
 
 #skill .skill_box .text {
     font-family: 'Poor Story', cursive;
-    color: #000;
+    color: white;
 }
 
 
@@ -370,7 +380,8 @@ a {
 #project {
     width: 100%;
     height: 100vh;
-    background-color: rgb(255, 255, 200);
+    /* background-color: rgb(255, 255, 200); */
+    background-color: rgb(0, 0, 20);
     z-index: 30;
     display: block;
     left: 0;
@@ -380,7 +391,7 @@ a {
 #project h2 {
     font-size: 70px;
     text-align: center;
-    color: rgb(62, 62, 62);
+    color: aliceblue(62, 62, 62);
     padding-top: 100px;
     box-sizing: border-box;
     font-family: 'Arimo', sans-serif;
@@ -505,7 +516,7 @@ a {
 #contact h2 {
     font-size: 70px;
     text-align: center;
-    color: rgb(62, 62, 62);
+    color: aliceblue(62, 62, 62);
     padding-top: 140px;
     box-sizing: border-box;
     font-family: 'Arimo', sans-serif;
@@ -557,7 +568,8 @@ input[type="submit"] {
 #finish {
     width: 100%;
     height: 200px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    background-color: rgb(0, 0, 20);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -567,7 +579,8 @@ input[type="submit"] {
     font-size: 40px;
     font-weight: 900;
     font-family: 'Arimo', sans-serif;
-    color: rgb(24, 24, 24);
+    /* color: rgb(24, 24, 24); */
+    color: white;
 }
 
 #wrap480 {
