@@ -123,11 +123,36 @@ a {
     margin: 150px 0 0 200px;
 }
 
-#main .main_txt {
-    margin-top: 400px;
+#main .typing_txt {
+    /* margin-top: 400px;
     font-size: 80px;
     color: #fff;
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Kanit', sans-serif; */
+    display: none;
+}
+
+#main .typing {
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    animation-name: cursor;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes cursor {
+    0% {
+        border-right: 1px solid #fff
+    }
+
+    50% {
+        border-right: 1px solid #000
+    }
+
+    100% {
+        border-right: 1px solid #fff
+    }
 }
 
 /* #main .home p {
