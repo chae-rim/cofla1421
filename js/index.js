@@ -23,6 +23,37 @@ $(window).on("wheel", function (e) {
 
 
 
+//main
+// new TypeIt(".main_txt", {
+//     speed: 100,
+//     waitUntilVisible: true,
+// })
+//     .type("진득함", { delay: 300 })
+//     .move(0, { delay: 300 })
+//     .delete(3, { delay: 300 })
+//     .type("배려심", { delay: 300 })
+//     .move(0, { delay: 300 })
+//     .delete(3, { delay: 300 })
+//     .type("책임감", { delay: 300 })
+//     .move(0, { delay: 300 })
+//     .delete(3, { delay: 300 })
+//     .type("아이디어", { delay: 300 })
+//     .move(0, { delay: 300 })
+//     .delete(4, { delay: 300 })
+//     .type("긍정", { delay: 300 })
+//     .move(0, { delay: 300 })
+//     .delete(2, { delay: 300 })
+//     .type("꼼꼼함", { delay: 300 })
+//     .pause(300)
+//     .delete(3, { delay: 300 })
+//     .type("안녕하세요,", { delay: 300 })
+//     .break({ delay: 500 })
+//     .type("웹퍼블리셔 박채림입니다.", { delay: 300 })
+//     .go();
+
+
+
+
 // nav
 $(document).ready(function () {
     var status = true
