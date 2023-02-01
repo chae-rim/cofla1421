@@ -1,3 +1,4 @@
+//스크롤 이벤트
 window.addEventListener("wheel", function (e) {
     e.preventDefault();
 }, { passive: false });
@@ -24,71 +25,26 @@ $(window).on("wheel", function (e) {
 
 
 //main
-var typingBool = false;
-var typingIdx = 0;
-var liIndex = 0;
-var liLength = $(".typing-txt>ul>li").length;
 
-// 타이핑될 텍스트를 가져온다 
-var typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
-typingTxt = typingTxt.split(""); // 한글자씩 자른다. 
-if (typingBool == false) { // 타이핑이 진행되지 않았다면 
-    typingBool = true;
-    var tyInt = setInterval(typing, 100); // 반복동작 
-}
+window.addEventListener("load", function () {
+    const content = "안녕하세요, \n 웹퍼블리셔 박채림입니다.";
+    const text = document.querySelector(".text");
+    let i = 0;
 
-function typing() {
-    if (typingIdx < typingTxt.length) { // 타이핑될 텍스트 길이만큼 반복 
-        $(".typing").append(typingTxt[typingIdx]); // 한글자씩 이어준다. 
-        typingIdx++;
-    } else { //한문장이끝나면
-        //다음문장으로.. 마지막문장이면 다시 첫번째 문장으로 
-        if (liIndex >= liLength - 1) {
-            liIndex = 0;
-        } else {
-            liIndex++;
+    function typing() {
+        let txt = content[i++];
+        text.innerHTML += txt === "\n" ? "<br/>" : txt;
+        if (i > content.length) {
+            text.textContent = "";
+            i = 0;
         }
-
-        //다음문장을 타이핑하기위한 셋팅
-        typingIdx = 0;
-        typingBool = false;
-        typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
-
-        //다음문장 타이핑전 1초 쉰다
-        clearInterval(tyInt);
-        setTimeout(function () {
-            $(".typing").html('');
-            tyInt = setInterval(typing, 100);
-        }, 1000);
     }
-}
+    setInterval(typing, 200)
+});
 
-// new TypeIt(".main_txt", {
-//     speed: 100,
-//     waitUntilVisible: true,
-// })
-//     .type("진득함", { delay: 300 })
-//     .move(0, { delay: 300 })
-//     .delete(3, { delay: 300 })
-//     .type("배려심", { delay: 300 })
-//     .move(0, { delay: 300 })
-//     .delete(3, { delay: 300 })
-//     .type("책임감", { delay: 300 })
-//     .move(0, { delay: 300 })
-//     .delete(3, { delay: 300 })
-//     .type("아이디어", { delay: 300 })
-//     .move(0, { delay: 300 })
-//     .delete(4, { delay: 300 })
-//     .type("긍정", { delay: 300 })
-//     .move(0, { delay: 300 })
-//     .delete(2, { delay: 300 })
-//     .type("꼼꼼함", { delay: 300 })
-//     .pause(300)
-//     .delete(3, { delay: 300 })
-//     .type("안녕하세요,", { delay: 300 })
-//     .break({ delay: 500 })
-//     .type("웹퍼블리셔 박채림입니다.", { delay: 300 })
-//     .go();
+
+
+
 
 
 
@@ -109,9 +65,6 @@ $(document).ready(function () {
     })
 
 })
-
-
-
 
 
 $(function () {
@@ -149,24 +102,24 @@ $(function () {
             scene01Num = 0;
             console.log('ok')
             $('#skill .box1').stop().delay(0).css({ right: '400px' })
-                .animate({ right: '100px' }, 1000);
+                .animate({ right: '50px' }, 1000);
             $('#skill .box2').stop().delay(500).css({ right: '400px' })
-                .animate({ right: '150px' }, 1000);
+                .animate({ right: '80px' }, 1000);
             $('#skill .box3').stop().delay(1000).css({ right: '400px' })
-                .animate({ right: '350px' }, 1000);
+                .animate({ right: '150px' }, 1000);
             $('#skill .box4').stop().delay(1500).css({ right: '400px' })
-                .animate({ right: '350px' }, 1000);
+                .animate({ right: '180px' }, 1000);
         }
         else if (scrollTop < 1500 && scene01Num == 0) {
             scene01Num = 1;
             $('#skill .box1').stop().css({ right: '400px' })
-                .animate({ right: '100px' }, 1000);
+                .animate({ right: '50px' }, 1000);
             $('#skill .box2').stop().css({ right: '400px' })
-                .animate({ right: '150px' }, 1000);
+                .animate({ right: '80px' }, 1000);
             $('#skill .box3').stop().css({ right: '400px' })
-                .animate({ right: '350px' }, 1000);
+                .animate({ right: '150px' }, 1000);
             $('#skill .box4').stop().css({ right: '400px' })
-                .animate({ right: '350px' }, 1000);
+                .animate({ right: '180px' }, 1000);
         }
     });
 });
