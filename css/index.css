@@ -474,18 +474,21 @@ a {
 #project_in .txt_box h3 {
     font-size: 20px;
     font-weight: 600;
+    font-family: 'Poor Story', cursive;
 }
 
 #project_in .txt_box .pro_txt {
     font-size: 15px;
     line-height: 30px;
     text-align: justify;
+    font-family: 'Poor Story', cursive;
 }
 
 #project_in .txt_box .skills {
     line-height: 30px;
     font-size: 15px;
     font-weight: 700;
+    font-family: 'Poor Story', cursive;
 }
 
 #project_in .txt_box a {
@@ -500,6 +503,7 @@ a {
     border: 1px solid #ccc;
     border-radius: 5px;
     transition: 0.3s ease;
+    color: black;
 }
 
 
@@ -557,7 +561,7 @@ input[type="submit"] {
     padding: 6px 30px;
     font-size: 14px;
     background-color: #f54949;
-    color: #fff;
+    color: white;
     border: none
 }
 
@@ -583,7 +587,7 @@ input[type="submit"] {
     color: white;
 }
 
-#wrap480 {
+#wrap375 {
     display: none;
 }
 
