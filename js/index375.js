@@ -15,6 +15,9 @@ $(document).ready(function () {
 
 })
 
+$(document).ready(function () {
+    var status = true
+})
 
 
 //main
