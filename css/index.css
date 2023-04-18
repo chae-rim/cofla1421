@@ -32,6 +32,11 @@ a {
     transition: all 0.5s;
 }
 
+/* #header.on {
+    background-color: rgba(255, 255, 255, 0.838);
+    border-bottom: 1px solid #ccc;
+} */
+
 #header .header_in {
     margin: 0 auto;
     width: 68%;
